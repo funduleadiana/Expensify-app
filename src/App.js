@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import 'normalize.css/normalize.css'
 import './styles/styles.scss';
 
@@ -28,14 +28,21 @@ const HelpPage=()=>(
         This is the page you will find help for all your queries.
     </div>
 );
+
+const NotFoundPage=()=>(
+    <div>
+        404 Error Page not found!
+    </div>
+)
 const routes = (
     <BrowserRouter>
-    <div>
+    <Switch>
     <Route path="/" component={ExpenseDashboardPage} exact/>
     <Route path="/create" component={AddExpensePage} />
     <Route path="/edit" component={EditPage} />
     <Route path="/help" component={HelpPage} />
-    </div>
+    <Route component={NotFoundPage}/>
+    </Switch>
     </BrowserRouter>
 );
 
