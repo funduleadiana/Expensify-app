@@ -3,12 +3,16 @@ const path = require('path')
 
 
 module.exports= {
-    entry: './src/playground/destructuring.js',
+    entry: './src/playground/redux-101.js',
     output: {
         path: path.join(__dirname, 'public'),
         filename: 'bundle.js'
     },
     mode: "development",
+    node: {
+      child_process: "empty"
+      // fs: "empty", // if unable to resolve "fs"
+  },
     module: {
         rules: [
           {
