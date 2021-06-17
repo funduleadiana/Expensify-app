@@ -18,4 +18,9 @@ const mapStateToProps = (state)=> {
 
 
 
-export default connect(mapStateToProps)(ExpenseList);
+export default connect(mapStateToProps)(ExpenseList); //HOC
+// Higher order component - a component (HOC) that renders another component
+// Reuse code
+// Render hijacking
+// Prop manipulation
+// Abstract state

@@ -29,8 +29,3 @@ const jsx = (
 );
 ReactDOM.render(jsx, document.getElementById('root'))
 
-// Higher order component - a component (HOC) that renders another component
-// Reuse code
-// Render hijacking
-// Prop manipulation
-// Abstract state
