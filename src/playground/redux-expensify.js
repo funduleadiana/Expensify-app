@@ -147,7 +147,7 @@ const getVisibleExpense = (expenses, {text, sortBy, startDate, endDate}) => {
     })
 }
 
-
+// Store creation
 const store = createStore(
     combineReducers({
         expenses: expensesReducer,
