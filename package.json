@@ -6,7 +6,8 @@
   "scripts": {
     "serve": "live-server public/",
     "build": "webpack",
-    "dev-server": "webpack serve"
+    "dev-server": "webpack serve",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,8 +21,10 @@
   },
   "homepage": "https://github.com/funduleadiana/React-projects#readme",
   "dependencies": {
+    "babel-core": "^7.0.0-bridge.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "bootstrap": "^5.0.1",
+    "jest": "^24.0.0",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
     "react": "^15.6.1",
@@ -31,11 +34,12 @@
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.2",
     "redux": "^3.7.2",
+    "regenerator-runtime": "^0.13.7",
     "uuid": "^3.4.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
-    "@babel/core": "^7.14.3",
+    "@babel/core": "^7.14.6",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.14.5",
     "@babel/preset-env": "^7.14.4",
