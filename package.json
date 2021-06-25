@@ -7,7 +7,7 @@
     "serve": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack serve",
-    "test": "jest"
+    "test": "jest --config=jest.config.json"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "bootstrap": "^5.0.1",
     "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
     "jest": "^24.0.0",
     "moment": "^2.29.1",
     "normalize.css": "^8.0.1",
