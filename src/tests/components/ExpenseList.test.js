@@ -8,4 +8,9 @@ test('should render Expense List with expenses', ()=> {
     expect(wrapper).toMatchSnapshot();
 })
 
+test('should render Expense List with expenses', ()=> {
+    const wrapper = shallow(<ExpenseList expenses={[]}/>);
+    expect(wrapper).toMatchSnapshot();
+})
+
 
