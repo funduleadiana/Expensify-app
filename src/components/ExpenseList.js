@@ -4,7 +4,7 @@ import ExpenseListItem from './ExpenseListItem';
 import selectExpenses from '../selectors/expensesSelector';
 
 
-const ExpenseList = (props)=> (
+export const ExpenseList = (props)=> (
     <div>
         <h1>Expense List</h1>
         {props.expenses.map((expense)=> {
