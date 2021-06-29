@@ -7,7 +7,7 @@ exports[`should render Expense List with expenses 1`] = `
   </h1>
   <ExpenseListItem
     amount={150}
-    createdAt={"1970-01-01T00:00:00.000Z"}
+    createdAt={0}
     description="Chewing Gum"
     id="1"
     note=""
