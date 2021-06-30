@@ -27,3 +27,10 @@ test('should render ExpenseList Filters correctly', ()=> {
     expect(wrapper).toMatchSnapshot();
 })
 
+
+test('should render ExpenseList Filters with altData correctly', ()=> {
+    wrapper.setProps({
+        filters: altfilters
+    })
+    expect(wrapper).toMatchSnapshot();
+})
